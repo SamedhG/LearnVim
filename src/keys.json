@@ -1,0 +1,263 @@
+[
+[
+    {
+        "id": "q",
+        "name": "MACRO",
+        "category": ["Misc"],
+        "description" : "Used to record macros so you can start automating your workflow.",
+        "modifiers": { }
+    },
+    {
+        "id": "w",
+        "name": "WORD",
+        "category": ["Movement"],
+        "description" : "Move to the next word. Places you at the first character of the next word",
+        "modifiers": {
+            "shift": "finds words based on space and not letters" 
+        }
+    },
+    {
+        "id": "e",
+        "name": "END",
+        "category": ["Movement"],
+        "description" : "Move to the end of the next word. Places you at the first character of the next word",
+        "modifiers": {
+            "shift": "finds words based on space and not letters",
+            "ctrl": "Move the page up by 1 line"
+        }
+    },
+    {
+        "id": "r",
+        "name": "REPLACE",
+        "category": ["Editing"],
+        "description" : "Replace the character your cursor is on",
+        "modifiers": {
+            "shift": "Enters replace mode, replacing characters until you het escape",
+            "ctrl": "Redo last undo"
+        }
+    },
+    {
+        "id": "t",
+        "name": "TILL",
+        "category": ["Movement"],
+        "description" : "Move the cursor to before the next occurrence of a char, to use type a char after the t. This is one of the hidden gems, I often use it to copt the contents between quotes.",
+        "modifiers": { 
+            "shift": "Move the cursor to the previous occurrence"
+        }
+    },
+    {
+        "id": "y",
+        "name": "YANK",
+        "category": ["Editing", "Movement"],
+        "description" : "Copy the item into the clipboard.",
+        "modifiers": {
+            "shift": "Copy the current line",
+            "ctrl": "Move the page down by 1 line",
+            "y<Movement Key>" : "Copy until where the movement will take you. For. e.g. y3 copies 3 lines, yw copies till the next word"
+        }
+    },
+    {
+        "id": "u",
+        "name": "UNDO",
+        "category": ["Editing", "Movement"],
+        "description" : "Undo the last change",
+        "modifiers": {
+            "shift": "Undo all the changes on the previously modified line",
+            "ctrl": "Move one page up"
+        }
+    },
+    {
+        "id": "i",
+        "name": "INSERT",
+        "category": ["Editing"],
+        "description" : "Enter insert mode and start actually typing where the cursor is",
+        "modifiers": {
+            "shift": "Go to the start of the line and then enter insert mode"
+        }
+    },
+    {
+        "id": "o",
+        "name": "OPEN",
+        "category": ["Editing"],
+        "description" : "Create a new line below and enter insert mode",
+        "modifiers": {
+            "shift": "Create the line above instead of below"
+        }
+    },
+    {
+        "id": "p",
+        "name": "PUT",
+        "category": ["Editing"],
+        "description" : "Paste the contents of your clipboard at the cursor",
+        "modifiers": {
+            "shift": "Paste the contents of the clipboard before the cursor"
+        }
+    }
+],
+[
+    {
+        "id": "a",
+        "name": "APPEND",
+        "category": ["Editing"],
+        "description" : "Enter insert mode on the next character",
+        "modifiers": {
+            "shift": "Enter insert mode at the end of the line"
+        }
+    },
+    {
+        "id": "s",
+        "name": "SUBSTITUTE",
+        "category": ["Editing"],
+        "description" : "Delete the current character and enter insert mode",
+        "modifiers": {
+            "shift": "Delete the current line and enter insert mode"
+        }
+    },
+    {
+        "id": "d",
+        "name": "DELETE",
+        "category": ["Editing"],
+        "description" : "Delete ",
+        "modifiers": {
+            "shift": "Delete from the cursor to the end of the line",
+            "d<Movement Key>": "Delete until where the movement will take you",
+            "dd": "Delete this line"
+        }
+    },
+    {
+        "id": "f",
+        "name": "FIND",
+        "category": ["Movement"],
+        "description" : "Move to the next occurrences of a char to the right",
+        "modifiers": {
+            "shift": "Move to the next occurrences of a char to the left"
+        }
+    },
+    {
+        "id": "g",
+        "name": "GOTO",
+        "category": ["Misc"],
+        "description" : "g is used for a ton of different purposes find more at :h g",
+        "modifiers": { }
+    },
+    {
+        "id": "h",
+        "name": "LEFT <",
+        "category": ["Movement"],
+        "description" : "Move a character to the left",
+        "modifiers": { 
+            "shift": "Move to the beginning of the page"
+        }
+    },
+    {
+        "id": "j",
+        "name": "DOWN V",
+        "category": ["Movement"],
+        "description" : "Move to the next line",
+        "modifiers": { 
+            "shift": "Join the next line into this line"
+        }
+    },
+    {
+        "id": "k",
+        "name": "UP ^",
+        "category": ["Movement"],
+        "description" : "Move to the previous line",
+        "modifiers": { }
+    },    
+    {
+        "id": "l",
+        "name": "RIGHT >",
+        "category": ["Movement"],
+        "description" : "Move to the next character",
+        "modifiers": { 
+            "shift": "Move to the end of the page"
+        }
+    }
+],
+[
+    {
+        "id": "z",
+        "name": "ZZZZ",
+        "category": ["Misc"],
+        "description" : "z is used for a ton of different purposes find more at :h z",
+        "modifiers": { }
+    },
+    {
+        "id": "x",
+        "name": "X OUT",
+        "category": ["Editing"],
+        "description" : "Delete a character",
+        "modifiers": { 
+            "shift": "Backspace"
+        }
+    },
+    {
+        "id": "c",
+        "name": "CHANGE",
+        "category": ["Editing"],
+        "description" : "Change until the given character",
+        "modifiers": { 
+            "shift": "Change until the end of the line"
+        }
+    },
+    {
+        "id": "v",
+        "name": "VISUAL",
+        "category": ["Misc"],
+        "description" : "Enter visual mode that allows you to select text by seeing the selection",
+        "modifiers": { 
+            "shift": "Select the current line and enter visual mode"
+        }
+    },
+    {
+        "id": "b",
+        "name": "BACK",
+        "category": ["Movement"],
+        "description" : "Move back one word",
+        "modifiers": { 
+            "shift": "Select the current line and enter visual mode"
+        }
+    },
+    {
+        "id": "n",
+        "name": "NEXT",
+        "category": ["Movement"],
+        "description" : "Move to the next occurrence of the last search",
+        "modifiers": { 
+            "shift": "Move to the previous occurrence of the last search"
+        }
+    },
+    {
+        "id": "m",
+        "name": "MARK",
+        "category": ["Movement", "Misc"],
+        "description" : "Mark the current position ' can be used to jump to different marks which can be helpful in large files",
+        "modifiers": { 
+            "shift": "Move to the center of the window"
+        }
+    },
+    {
+        "id": "<",
+        "name": "UNINDENT",
+        "category": ["Editing"],
+        "description" : "Reduce the indentation level by 1",
+        "modifiers": { 
+           "<<": "Unindent the current line",
+           "<<Number>": "Unindent the next n lines",
+           "shift": "repeat the last FIND(f) / TILL(t)"
+        }
+    },
+    {
+        "id": ">",
+        "name": "INDENT",
+        "category": ["Editing"],
+        "description" : "Increase the indentation level by 1",
+        "modifiers": { 
+           ">>": "Indent the current line",
+           "><Number>": "Indent the next n lines",
+           "shift": "repeat the last FIND(f) / TILL(t)"
+        }
+    }
+]
+]
