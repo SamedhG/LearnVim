@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Keyboard from './Keyboard'
 import Intro from './Intro'
+import Start from './Start'
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
@@ -68,7 +69,7 @@ export default function App() {
           <Intro />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        More information coming soon
+          <Start />
       </TabPanel>
       <TabPanel value={value} index={2}>
           <Keyboard />
